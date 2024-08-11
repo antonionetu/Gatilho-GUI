@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatilho App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>I found this</h1>
+
+      <div class="row">
+        <a
+          href="https://github.com/antonionetu/gatilho-backend"
+          target="_blank"
+        >
+          <img
+            src="/assets/gun.png"
+            class="logo vanilla"
+            alt="JavaScript logo"
+          />
+        </a>
+      </div>
+
+      <div id="items-container"></div>
+
+      <a
+        id="greet-msg"
+        href="/"
+        style="margin-top: 2rem;"
+      >
+        Back
+      </a>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+      populateItems()
+    </script>
+  </body>
+</html>

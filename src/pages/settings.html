@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatilho App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Change Device Settings</h1>
+
+      <div class="row">
+        <a
+          href="https://github.com/antonionetu/gatilho-backend"
+          target="_blank"
+        >
+          <img
+            src="/assets/gun.png"
+            class="logo vanilla"
+            alt="JavaScript logo"
+          />
+        </a>
+      </div>
+
+      <p>Certify the information bellow is correct</p>
+
+      <form id="greet-form" style="display:flex; flex-direction: column; gap: 14px; align-items: center;">
+        <input id="greet-input-address" placeholder="Enter the server IP" style="width: 400px;" />
+        <input id="greet-input-guest" placeholder="Enter the device ALIAS" style="width: 400px;" />
+        <button type="button" style="width: 440px;" onclick="changeDeviceSettings()">Confirm</button>
+      </form>
+        <div style="margin-top: 2rem;">
+          <a
+            id="greet-msg"
+            href="/"
+          >
+            Back
+          </a>
+        </div>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+      const load = async () => {
+        document.querySelector("#greet-input-address").defaultValue  = await returnAddress()
+        document.querySelector("#greet-input-guest").defaultValue  = await returnGuest()
+      }
+      load()
+    </script>
+  </body>
+</html>

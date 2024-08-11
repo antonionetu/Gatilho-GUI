@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatilho App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <a href="/pages/settings" class="gear-icon">
+        <img src="https://img.icons8.com/ios-filled/50/000000/settings.png" alt="Ícone de Engrenagem">
+    </a>
+
+    <div class="container">
+      <h1>Welcome to Gatilho!</h1>
+      <div class="row">
+        <a
+          href="https://github.com/antonionetu/gatilho-backend"
+          target="_blank"
+        >
+          <img
+            src="/assets/gun.png"
+            class="logo vanilla"
+            alt="JavaScript logo"
+          />
+        </a>
+      </div>
+      <p>Search for some stored site password</p>
+
+      <form class="row" id="greet-form">
+        <input id="greet-input" placeholder="Enter a name..." />
+        <button type="button" onclick="searchPassword()">Search</button>
+      </form>
+      <div style="margin-top: 2rem;">
+        <a
+          id="greet-msg"
+          href="pages/create.html"
+          style="text-decoration: underline;"
+        >
+          Or Create One
+        </a>
+      </div>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
